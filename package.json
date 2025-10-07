@@ -1,0 +1,23 @@
+{
+  "name": "bookmyshow-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Srinidhi-Balamurugan/bookmyshow-testing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Srinidhi-Balamurugan/bookmyshow-testing/issues"
+  },
+  "homepage": "https://github.com/Srinidhi-Balamurugan/bookmyshow-testing#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.56.0",
+    "@types/node": "^24.7.0"
+  }
+}
