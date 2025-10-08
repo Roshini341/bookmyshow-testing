@@ -1,29 +1,10 @@
-import { test, expect } from '@playwright/test';
-import { SignInPage } from '../pages/SignInPage';
+import { test } from '../fixtures/page-fixtures';
+import { readCSV } from '../utils/readCSV';
 
-test('Sign-in with invalid mobile number and capture screenshot', async ({ page }) => {
-  const signInPage = new SignInPage(page);
+const testData = readCSV('./data/invalid-mobile.csv');
 
-  await test.step('Navigate to BookMyShow homepage', async () => {
-    await signInPage.gotoHomePage();
+for (const { mobile } of testData) {
+  test(`Try invalid login with mobile: ${mobile}`, async ({ pages }) => {
+    await pages.signin.tryInvalidLogin(mobile);
   });
-
-  await test.step('Open sign-in modal', async () => {
-    await signInPage.openSignInModal();
-  });
-
-  await test.step('Enter invalid mobile number', async () => {
-    await signInPage.enterMobileNumber('1234567890');
-  });
-
-  await test.step('Check for error and capture screenshot if needed', async () => {
-    const isErrorVisible = await signInPage.isInvalidMobileErrorVisible();
-    if (isErrorVisible) {
-      await signInPage.captureScreenshot('invalid-mobile-number.png');
-      console.log('❌ Invalid mobile number detected. Screenshot saved.');
-    } else {
-      console.log('✅ No error message detected.');
-    }
-    expect(isErrorVisible).toBe(true);
-  });
-});
+}

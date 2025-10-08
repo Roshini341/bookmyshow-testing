@@ -1,0 +1,4 @@
+email,mobile,subject,query,description
+
+test1@example.com,8888888888,Refund Request,BookAChange,Please help me with refund for cancelled show.
+test2@example.com,7777777777,Login Issue,BookAChange,Unable to login with registered mobile number.
