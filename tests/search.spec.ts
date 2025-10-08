@@ -1,4 +1,3 @@
-// tests/search.spec.ts
 import { test } from '../fixtures/page-fixtures';
 import { readCSV } from '../utils/readCSV';
 

@@ -1,6 +1,6 @@
 {
     "events": {
-    "citySelector": "xpath=//*[@id='bottomSheet-model-close']/div/div/div[2]/div[2]/div/ul/li[7]/div/span[2]/p",
+    
     "eventsLink": "role=link[name='Events']",
     "languagesFilter": "text=Languages",
     "englishLanguage": "text=English >> nth=1",
