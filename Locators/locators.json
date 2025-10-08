@@ -1,3 +1,65 @@
 {
+    "events": {
+    "citySelector": "xpath=//*[@id='bottomSheet-model-close']/div/div/div[2]/div[2]/div/ul/li[7]/div/span[2]/p",
+    "eventsLink": "role=link[name='Events']",
+    "languagesFilter": "text=Languages",
+    "englishLanguage": "text=English >> nth=1",
+    "categoriesFilter": "text=Categories",
+    "kidsCategory": "div >> text=/^KidsKids$/ >> nth=3",
+    "moreFilters": "text=More Filters",
+    "priceFilter": "text=Price"
     
+  },
+  "movies": {
+    "moviesLink": "xpath=//*[@id='super-container']/div[1]/div[2]/div/div/div[1]/div/a[1]",
+    "languageContainer": "xpath=//*[@id='super-container']/div[2]/div[3]/div[2]/div[2]/div"
+  },
+  "search": {
+    "citySelector": "xpath=//*[@id='bottomSheet-model-close']/div/div/div[2]/div[2]/div/ul/li[7]/div/span[2]/p",
+    "moviesLink": "role=link[name='Movies']",
+    "searchBoxTrigger": "text=Search for Movies, Events,",
+    "searchInput": "xpath=//*[@id='super-container']/div[1]/div[1]/div/div/div/div[1]/div[2]/div/span[2]"
+  },
+  "giftcards": {
+    "giftCardsLink": "xpath=//*[@id='super-container']/div[1]/div[2]/div/div/div[2]/div/a[4]",
+    "giftCardList": "xpath=//*[@id='super-container']/div[2]/div[2]/div[1]/ul[2]/li",
+    "giftCardContainer": "xpath=//*[@id='super-container']/div[2]/div[2]/div[1]/ul[2]"
+  },
+  "signin": {
+    "signInButton": "text=Sign in",
+    "mobileInput": "#userMobileNumber",
+    "mobileFieldTrigger": "role=textbox[name='Continue with mobile number']"
+  },
+  "scroll": {
+    "movies": "xpath=//*[@id='super-container']/div[1]/div[2]/div/div/div[1]/div/a[1]",
+    "stream": "xpath=//*[@id='super-container']/div[1]/div[2]/div/div/div[1]/div/a[2]",
+    "events": "xpath=//*[@id='super-container']/div[1]/div[2]/div/div/div[1]/div/a[3]",
+    "plays": "xpath=//*[@id='super-container']/div[1]/div[2]/div/div/div[1]/div/a[4]",
+    "sports": "xpath=//*[@id='super-container']/div[1]/div[2]/div/div/div[1]/div/a[5]",
+    "activities": "xpath=//*[@id='super-container']/div[1]/div[2]/div/div/div[1]/div/a[6]"
+  },
+  "navigation": {
+    "citySelector": "xpath=//*[@id='bottomSheet-model-close']/div/div/div[2]/div[2]/div/ul/li[7]/div/span[2]/p",
+    "movies": "role=link[name='Movies']",
+    "stream": "xpath=//*[@id='super-container']/div[1]/div[2]/div/div/div[1]/div/a[2]",
+    "events": "xpath=//*[@id='super-container']/div[1]/div[2]/div/div/div[1]/div/a[3]",
+    "plays": "xpath=//*[@id='super-container']/div[1]/div[2]/div/div/div[1]/div/a[4]",
+    "sports": "xpath=//*[@id='super-container']/div[1]/div[2]/div/div/div[1]/div/a[5]",
+    "activities": "xpath=//*[@id='super-container']/div[1]/div[2]/div/div/div[1]/div/a[6]",
+    "listYourShow": "xpath=//*[@id='super-container']/div[1]/div[2]/div/div/div[2]/div/a[1]",
+    "corporates": "xpath=//*[@id='super-container']/div[1]/div[2]/div/div/div[2]/div/a[2]",
+    "offers": "xpath=//*[@id='super-container']/div[1]/div[2]/div/div/div[2]/div/a[3]",
+    "giftCards": "xpath=//*[@id='super-container']/div[1]/div[2]/div/div/div[2]/div/a[4]"
+  },
+  "support": {
+    "customerCareLink": "xpath=//*[@id='super-container']/div[3]/div/div[3]/div/div/div/a[1]/div[2]",
+    "newTicketLink": "role=link[name='New support ticket']",
+    "emailInput": "role=textbox[name='Requester*']",
+   
+    "mobileInput": "#helpdesk_ticket_custom_field_contact_number_79003",
+    "subjectInput": "role=textbox[name='Subject*']",
+    "queryDropdown": "#helpdesk_ticket_custom_field_query_79003",
+    "descriptionEditor": ".redactor_editor",
+    "submitButton": "role=button[name='Submit']"
+  }
 }
